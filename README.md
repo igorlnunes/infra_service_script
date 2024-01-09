@@ -1,20 +1,22 @@
 # Criação de Infraestrutura como Serviço (IaaS) - Script Shell
 
-Este repositório contém um script Shell desenvolvido como parte do curso de Linux da [Digital Innovation One (DIO)](https://www.dio.me/). O objetivo deste script é criar uma infraestrutura como serviço (IaaS) básica, onde são definidos grupos de usuários e diretórios específicos para cada grupo.
+Este repositório contém um script Shell desenvolvido como parte do curso de Linux da [Digital Innovation One (DIO)](https://www.dio.me/). O objetivo deste repositório é criar uma infraestrutura como código (IaC).
 
-## Infraestrutura como Serviço (IaaS)
+## Infraestrutura como Código (IaC)
 
-**Infraestrutura como Serviço (IaaS)** refere-se a um modelo de serviço em nuvem que fornece virtualização de hardware e recursos computacionais sob demanda. Nesse modelo, a infraestrutura é provisionada e gerenciada via código, permitindo uma maior flexibilidade e escalabilidade.
+**Infraestrutura como Código(IaC)** IAC significa "Infraestrutura como Código" (em inglês, "Infrastructure as Code"). É um conceito fundamental na automação e gerenciamento de infraestrutura de TI. A ideia por trás do IAC é tratar a infraestrutura de TI da mesma forma que o código-fonte de software, permitindo que você a gerencie, versione e automatize por meio de código.
 
-## Sobre o Script
+Em vez de configurar manualmente servidores, redes e outros componentes de infraestrutura, os profissionais de TI podem expressar suas intenções e configurações por meio de código, que é então executado por ferramentas especializadas. Isso proporciona vários benefícios:
 
-O script cria grupos de sistema e usuários associados a esses grupos, cada um com acesso específico a um diretório correspondente. Os grupos são:
+    - Reprodutibilidade: Ao definir a infraestrutura como código, é possível reproduzir facilmente o ambiente em diferentes estágios do desenvolvimento, como desenvolvimento, teste e produção.
 
-- GRP_ADM: Grupo de administradores
-- GRP_VEN: Grupo de vendedores
-- GRP_SEC: Grupo de segurança
+    - Controle de Versão: O código da infraestrutura pode ser versionado usando sistemas de controle de versão, como o Git. Isso permite rastrear alterações ao longo do tempo, entender quem fez as alterações e, se necessário, reverter para versões anteriores.
 
-Além disso, o script atribui permissões adequadas aos diretórios, garantindo a segurança e isolamento entre os grupos.
+    - Automatização: A automação é uma parte crucial do IAC. Ferramentas como Terraform, Ansible, Chef e Puppet permitem a automação da implantação e configuração de recursos de infraestrutura.
+
+    - Colaboração: O IAC facilita a colaboração entre equipes de desenvolvimento e operações. Ambas as equipes podem entender e contribuir para o código da infraestrutura, melhorando a comunicação e a eficiência.
+
+    - Documentação Dinâmica: O código da infraestrutura serve como documentação viva. Em vez de depender de documentos estáticos, os detalhes da infraestrutura estão incorporados no código e podem ser consultados a qualquer momento.
 
 ## Importância do Conhecimento do Código e Principais Comandos
 
@@ -30,21 +32,7 @@ Compreender e dominar scripts em Shell é fundamental para administradores de si
 
 **Observação:** Este script é um exemplo educacional e deve ser adaptado conforme as necessidades específicas do ambiente de produção.
 
-## Como Utilizar o Script
 
-1. Clone o repositório para a sua máquina local:
-
-    ```bash
-    git clone https://github.com/igorlnunes/infra_service_script.git
-    ```
-
-2. Execute o script:
-
-    ```bash
-    bash ias_addusers.sh
-    ```
-
-3. Verifique as permissões dos diretórios criados.
 
 O script agora terá configurado a infraestrutura básica como serviço no seu sistema.
 
